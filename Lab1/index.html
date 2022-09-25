@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link href="/Lab1/style.css"></link>
+    <link rel="stylesheet" href="style.css">
+    </link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <title>Lab1</title>
 </head>
+
 <body>
-    <h1>Hello world!</h1>
+    <div class="header-div">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <img
+                    src="data:image/png;base64,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">
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Info</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">History</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">Contacts</a>
+            </li>
+        </ul>
+        <div class="menu-end-item">
+            <h4 href="#">Pray for Ukraine</h4>
+        </div>
+    </div>
+    <main>
+        <div class="side-scroll">
+            <ul>
+                <li>H</li>
+                <li>U</li>
+                <li>I</li>
+                <li>N</li>
+                <li>YA</li>
+            </ul>
+        </div>
+        <div class="content-header">Some header</div>
+        <div class="main-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat diam urna, et dictum libero iaculis id. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi erat purus, egestas ut lacus ut,
+        venenatis pulvinar ligula. Quisque id ligula sed est blandit accumsan. Quisque tristique sit amet diam ac tincidunt.
+        Suspendisse dignissim est ligula, ac faucibus felis imperdiet porttitor. Pellentesque elementum, nibh eget vulputate
+        sagittis, enim felis ornare tortor, vitae pretium dolor felis sit amet urna. Fusce dignissim, velit at venenatis
+        placerat, mi arcu elementum mauris, sit amet condimentum ligula nisl eu sem. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat diam urna, et dictum libero iaculis id. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi erat purus, egestas ut lacus ut,
+        venenatis pulvinar ligula. Quisque id ligula sed est blandit accumsan. Quisque tristique sit amet diam ac tincidunt.
+        Suspendisse dignissim est ligula, ac faucibus felis imperdiet porttitor. Pellentesque elementum, nibh eget vulputate
+        sagittis, enim felis ornare tortor, vitae pretium dolor felis sit amet urna. Fusce dignissim, velit at venenatis
+        placerat, mi arcu elementum mauris, sit amet condimentum ligula nisl eu sem. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris volutpat diam urna, et dictum libero iaculis id. Orci
+        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi erat purus, egestas ut lacus ut,
+        venenatis pulvinar ligula. Quisque id ligula sed est blandit accumsan. Quisque tristique sit amet diam ac tincidunt.
+        Suspendisse dignissim est ligula, ac faucibus felis imperdiet porttitor. Pellentesque elementum, nibh eget vulputate
+        sagittis, enim felis ornare tortor, vitae pretium dolor felis sit amet urna. Fusce dignissim, velit at venenatis
+        placerat, mi arcu elementum mauris, sit amet condimentum ligula nisl eu sem. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas.Suspendisse in metus ut ex fermentum gravida eu eu erat.</div>
+        <div class="post-author">Pidors and pussies</div>
+        <div class="ad-div">Ad goes here</div>
+    </main>
+    <footer>
+        footer
+    </footer>
 </body>
+
 </html>
