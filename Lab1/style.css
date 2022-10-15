@@ -5,6 +5,7 @@
 html,
 body {
   margin: 0;
+  height: 100%;
   font-family: "Roboto Mono", monospace;
 }
 
@@ -94,11 +95,11 @@ body {
 main {
   position: relative;
   text-align: center;
-  flex: 1;
   display: grid;
   grid-template-rows: auto 1fr 100px;
   grid-template-columns: 1fr 4fr 2fr;
-  
+  flex-grow: 1;
+
   background-color: aquamarine;
 }
 
