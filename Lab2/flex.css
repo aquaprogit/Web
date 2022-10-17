@@ -148,7 +148,6 @@ main {
 /* side bar style end */
 
 .content-header {
-  grid-column: 2;
   background-color: #393e46;
 }
 
