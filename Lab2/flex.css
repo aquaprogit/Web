@@ -33,6 +33,7 @@ body {
 .last {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 
+  min-width: 170px;
   justify-self: flex-end;
   margin-left: auto;
   margin-right: 25px;
@@ -124,6 +125,7 @@ main {
 
 .side-scroll {
   min-width: 20%;
+  text-align: center;
   background-color: #393e46;
   border-right: 1px solid whitesmoke;
   font-size: 21px;
@@ -159,7 +161,7 @@ main {
 
 .map-div {
   background-color: wheat;
-  min-width: 25%;
+  min-width: 28%;
 }
 
 iframe {
