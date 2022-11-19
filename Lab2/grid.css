@@ -152,6 +152,9 @@ main {
   background-color: wheat;
   grid-column: 3;
   grid-row: 1/4;
+  max-width: 33vw;
+  display: grid;
+  grid-template-rows: auto;
 }
 
 iframe {
