@@ -146,6 +146,8 @@ main {
   background-color: wheat;
   grid-column: 3;
   grid-row: 1/4;
+  display: flex;
+  flex-direction: column;
 }
 
 iframe {
