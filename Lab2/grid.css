@@ -152,9 +152,10 @@ main {
   background-color: wheat;
   grid-column: 3;
   grid-row: 1/4;
+  min-width: 28%;
   max-width: 33vw;
   display: grid;
-  grid-template-rows: auto;
+  grid-template-rows: auto 1fr;
 }
 
 iframe {

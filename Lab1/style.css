@@ -148,6 +148,7 @@ main {
   grid-row: 1/4;
   display: flex;
   flex-direction: column;
+  max-width: 33vw;
 }
 
 iframe {
