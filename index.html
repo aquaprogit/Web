@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Web labs</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            list-style: none;
+            padding: 0;
+            font-size: 24px;
+        }
+
+        .line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .indicator {
+            height: 30px;
+            border-radius: 50%;
+            border: dashed black 1px;
+            width: 30px;
+            margin-right: 10px;
+        }
+        .lab1, .lab2{
+            background-color: lime;
+        }
+    </style>
 </head>
+
 <body>
-    <h2>Web labs</h2>
+    <h1>Web labs</h1>
     <ul>
-        <li><a href="Lab1/index.html">Lab #1 Done</a></li>
-        <li><a href="Lab2/flex.html">Lab #2 In progress...</a></li>
+        <li>
+            <div class="line">
+                <div class="indicator lab1"></div>
+                <a href="Lab1/index.html">Lab #1 Done</a>
+            </div>
+        </li>
+        </div>
+        <li>
+            <div class="line">
+                <div class="indicator lab2"></div>
+                <a href="Lab2/flex.html">Lab #2 Done</a>
+            </div>
+        </li>
     </ul>
 </body>
+
 </html>
