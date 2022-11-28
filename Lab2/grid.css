@@ -152,6 +152,7 @@ main {
   background-color: wheat;
   grid-column: 3;
   grid-row: 1/4;
+  position: relative;
   min-width: 28%;
   max-width: 33vw;
   display: grid;
@@ -160,6 +161,9 @@ main {
 
 iframe {
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 
