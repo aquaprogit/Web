@@ -10,9 +10,9 @@ body {
 }
 
 body {
-  display: table;
   width: 100%;
   color: #d7f9ff;
+  display: table;
 }
 
 .header-div {
@@ -75,7 +75,7 @@ body {
   background-position: 0 50%;
 }
 
-#last > div {
+.content {
   display: table-cell;
   vertical-align: middle;
 }
@@ -88,14 +88,15 @@ body {
 main {
   min-height: calc(100vh - 175px);
   width: 100%;
+  height: 100%;
   position: relative;
+  display: table;
+  overflow: hidden;
 }
 table {
-  table-layout: fixed;
-  position: absolute;
   text-align: center;
+  min-height: calc(100vh - 175px);
   height: 100%;
-  float: left;
   width: 72%;
   border-spacing: 0;
   background-color: slategrey;
@@ -118,6 +119,7 @@ table {
   color: #d7f9ff;
 }
 .content-header {
+  height: 10%;
   background-color: #393e46;
 }
 
@@ -146,18 +148,19 @@ table {
 
 .map-div {
   background-color: wheat;
+  position: absolute;
   min-width: 28%;
   max-width: 33vw;
-  min-height: calc(100vh - 175px);
-  float: right;
-  position: relative;
+  height: 100%;
+  right: 0;
+  top: 0;
 }
 
 iframe {
-  position: absolute;
-  top: 0;
   height: 100%;
   width: 100%;
+  position: absolute;
+  top: 0;
 }
 
 footer {
